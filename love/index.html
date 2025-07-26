@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For the Love of My Life</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff5f7;
+      color: #555;
+      line-height: 1.6;
+    }
+    .dancing {
+      font-family: 'Dancing Script', cursive;
+    }
+    .heart {
+      animation: heartbeat 1.5s infinite;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .polaroid {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .polaroid:hover {
+      transform: rotate(3deg) scale(1.05);
+    }
+    .polaroid:before {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-color: #f9bbbb;
+      opacity: 0.6;
+      z-index: -1;
+    }
+    .note {
+      background: linear-gradient(135deg, #f9e2ff 0%, #ffcce6 100%);
+      border: 1px solid rgba(255,192,203,0.5);
+      transform: rotate(-1deg);
+    }
+    .note:hover {
+      transform: rotate(0deg) scale(1.02);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .btn-heart {
+      transition: all 0.3s;
+      background: linear-gradient(to right, #ff6b8b, #ff8e9e);
+    }
+    .btn-heart:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255,107,139,0.4);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+  <!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 to-rose-100 overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-pink-300 blur-xl"></div>
+      <div class="absolute top-2/3 right-1/4 w-40 h-40 rounded-full bg-rose-200 blur-xl"></div>
+    </div>
+    <div class="text-center z-10 px-4">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 dancing text-rose-700">Shonaaaaa</h1>
+      <div class="heart inline-block text-6xl text-rose-600 mb-8">❤️</div>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-rose-900">Every moment with you is a page in the story I never want to end</p>
+      <a href="#love-letter" class="btn-heart inline-block px-8 py-3 rounded-full text-white font-semibold">Read My Love Letter</a>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Love Letter Section -->
+  <section id="love-letter" class="py-20 px-4 md:px-10 max-w-4xl mx-auto">
+    <div class="note p-8 md:p-12 rounded-lg mb-16 relative">
+      <div class="absolute top-0 right-0 p-4 text-rose-400">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.88 2.121z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 dancing text-rose-700">To My Love</h2>
+      <div class="prose prose-pink max-w-none">
+        <p class="mb-4">My Shonaa,</p>
+        <p class="mb-4">From the day i met you to till date hamko bas tera upar pagal he hote ja rha hai idk whats so special in you but i just know that you are my everything</p>
+        <p class="mb-4">I want you to know that you are my greatest motivation, my most beautiful surprise, and the love I've been searching for all my life. Ik we will have to face many diffucilties in our upcoming day to day life but ham hamesha tera sath hai.</p>
+        <p class="mb-4">No words can truly express how much you mean to me, but I want to spend my life trying to show you through my actions, my love, and my unwavering devotion.</p>
+        <p class="mb-4">You are my today and all of my tomorrows.</p>
+        <p>Forever Yours,</p>
+        <p class="dancing text-2xl mt-4 text-rose-600">💖 Your Loving Shonaaaa</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <h3 class="text-2xl mb-6 text-rose-800">Our Journey Together</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl text-rose-500 mb-2" id="days-together">0</div>
+          <div class="text-sm text-rose-700">Days Together</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl text-rose-500 mb-2" id="hours-talking">0</div>
+          <div class="text-sm text-rose-700">Hours Talking</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl text-rose-500 mb-2" id="kisses-shared">0</div>
+          <div class="text-sm text-rose-700">Kisses Shared</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl text-rose-500 mb-2" id="memories-made">0</div>
+          <div class="text-sm text-rose-700">Memories Made</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Memories -->
+  <section class="py-16 bg-rose-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl text-center mb-12 dancing text-rose-700">Our Precious Memories</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Polaroid-style photo cards -->
+        <div class="polaroid relative pt-4">
+          <img src="a/firstpic.jpg" alt="Couple holding hands while walking along a beach at sunset, waves gently lapping at their feet" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">Our First Picture</p>
+        </div>
+        <div class="polaroid relative pt-4">
+          <img src="a/Durgapuja.jpg" alt="Romantic candlelit dinner at a cozy restaurant with wine glasses clinking together" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">Our First Durga Puja</p>
+        </div>
+        <div class="polaroid relative pt-4">
+          <img src="a/lastday.jpg" alt="Couple laughing together in the falling snow, bundled in warm winter coats with rosy cheeks" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">Last Day of School</p>
+        </div>
+        <div class="polaroid relative pt-4">
+          <img src="a/farewell.jpg" alt="Back view of couple watching sunrise from a mountain top with arms around each other" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">Farewell</p>
+        </div>
+        <div class="polaroid relative pt-4">
+          <img src="a/trip.jpg" alt="Close-up of couple's hands intertwined with matching bracelets in golden sunlight" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">MY Fav Picture</p>
+        </div>
+        <div class="polaroid relative pt-4">
+          <img src="a/trip2.jpg" alt="Silhouette of couple dancing under string lights in a backyard as if no one else exists" class="w-full h-64 object-cover" />
+          <p class="text-center mt-3 mb-1 dancing text-lg text-rose-700">Shillong Trip</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Song Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl mb-8 dancing text-rose-700">Our Song</h2>
+      <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+        <div class="w-full h-64 bg-gray-100 flex items-center justify-center mb-6">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4e51cf1-a983-4a0b-990f-5e0998a83cf7.png" alt="Vinyl record spinning on player with retro microphone next to it, representing our special song" class="h-48 w-48 rounded-full object-cover shadow-lg" />
+        </div>
+        <h3 class="text-2xl mb-2">Our Special Melody</h3>
+        <p class="mb-6 text-gray-600">Every time I hear this song, I'm reminded of you</p>
+        <audio id="our-song" src="a/our-song.mp3"></audio>
+        <button id="play-song" class="btn-heart px-6 py-2 rounded-full text-white">Play Our Song</button>
+        <div class="text-xs mt-2 text-gray-500">Lovee Youuuuuuuu</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Countdown Section -->
+  <section class="py-16 bg-gradient-to-r from-rose-100 to-pink-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl mb-12 dancing text-rose-700">Counting the Moments</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl font-bold text-rose-600" id="countdown-days">00</div>
+          <div class="text-sm text-rose-700">Days</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl font-bold text-rose-600" id="countdown-hours">00</div>
+          <div class="text-sm text-rose-700">Hours</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl font-bold text-rose-600" id="countdown-minutes">00</div>
+          <div class="text-sm text-rose-700">Minutes</div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="text-4xl font-bold text-rose-600" id="countdown-seconds">00</div>
+          <div class="text-sm text-rose-700">Seconds</div>
+        </div>
+      </div>
+      <p class="text-xl mb-4">Until Our Next Special Moment</p>
+      <button id="set-date" class="btn-heart px-6 py-2 rounded-full text-white">Set Special Date</button>
+    </div>
+  </section>
+
+  <!-- Create a Love Note -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl text-center mb-12 dancing text-rose-700">Create a Love Note</h2>
+      <div class="bg-rose-50 p-8 rounded-lg shadow-inner">
+        <textarea id="love-note" class="w-full h-40 p-4 mb-6 rounded-lg border border-rose-200 focus:ring-2 focus:ring-rose-300 focus:border-rose-300" placeholder="Pour your heart out here..."></textarea>
+        <div class="flex items-center mb-4">
+          <label class="mr-3 text-rose-700">Decorations:</label>
+          <button class="emoji-btn mx-1 px-2 py-1 rounded bg-rose-100 hover:bg-rose-200" data-emoji="❤️">❤️</button>
+          <button class="emoji-btn mx-1 px-2 py-1 rounded bg-rose-100 hover:bg-rose-200" data-emoji="🌹">🌹</button>
+          <button class="emoji-btn mx-1 px-2 py-1 rounded bg-rose-100 hover:bg-rose-200" data-emoji="✨">✨</button>
+          <button class="emoji-btn mx-1 px-2 py-1 rounded bg-rose-100 hover:bg-rose-200" data-emoji="💕">💕</button>
+        </div>
+        <button id="generate-note" class="btn-heart w-full py-3 rounded-full text-white">Create Beautiful Note</button>
+      </div>
+      <div id="note-output" class="hidden mt-8 p-8 bg-gradient-to-r from-pink-100 to-rose-100 rounded-lg shadow-lg text-center">
+        <p id="note-content" class="text-lg mb-4"></p>
+        <button id="copy-note" class="btn-heart px-6 py-2 rounded-full text-white">Copy Note</button>
+        <button id="save-note" class="btn-heart px-6 py-2 rounded-full text-white ml-4">Save As Image</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Thoughts -->
+  <section class="py-20 px-4 bg-rose-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl mb-8 dancing text-rose-700">Above All Else</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Through every season, every challenge, and every joy, my love for you remains the constant that gives my life some sense.</p>
+      <div class="heart inline-block text-8xl text-rose-600 mb-8">❤️</div>
+      <p class="text-xl dancing text-rose-700">I love you Shonaa more than words can express</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-rose-800 text-white text-center">
+    <p>Made with <span class="text-rose-300">♥</span> for Ankita Paul Choudhury, aka Prema</p>
+    <p class="text-sm mt-2 text-rose-200">© <span id="current-year"></span> Forever Yours - A gift from Shonaa</p>
+  </footer>
+
+  <script>
+    // Animated counters for statistics
+    function animateValue(id, start, end, duration) {
+      const obj = document.getElementById(id);
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Animate statistics
+      setTimeout(() => {
+        const relationshipStartDate = new Date('2023-09-23');
+        const today = new Date();
+        const daysTogether = Math.floor((today - relationshipStartDate) / (1000 * 60 * 60 * 24));
+        
+        animateValue('days-together', 0, daysTogether, 2000);
+        animateValue('hours-talking', 0, daysTogether * 24, 2000);
+        animateValue('kisses-shared', 0, Math.floor(daysTogether * 8.5), 2000);
+        animateValue('memories-made', 0, daysTogether * 2, 2000);
+      }, 1000);
+
+      // Countdown timer
+      function updateCountdown() {
+        // Set your special date here (month is 0-indexed)
+        const targetDate = new Date();
+        targetDate.setMonth(targetDate.getMonth() + 1); // Example: 1 month from now
+        const now = new Date();
+        const diff = targetDate - now;
+        
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Love note generator
+      document.getElementById('generate-note').addEventListener('click', function() {
+        const note = document.getElementById('love-note').value;
+        if (note.trim() === '') {
+          alert('Please write your love note first!');
+          return;
+        }
+        
+        document.getElementById('note-content').innerHTML = note.replace(/\n/g, '<br>');
+        document.getElementById('note-output').classList.remove('hidden');
+      });
+
+      // Emoji buttons
+      document.querySelectorAll('.emoji-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const textarea = document.getElementById('love-note');
+          textarea.value += this.getAttribute('data-emoji');
+        });
+      });
+
+      // Copy note
+      document.getElementById('copy-note').addEventListener('click', function() {
+        const note = document.getElementById('love-note').value;
+        navigator.clipboard.writeText(note).then(() => {
+          alert('Love note copied to clipboard!');
+        });
+      });
+
+      // Set date button
+      document.getElementById('set-date').addEventListener('click', function() {
+        const dateStr = prompt('Enter your special date (YYYY-MM-DD):');
+        if (dateStr) {
+          // Here you would typically save this date and update the countdown
+          alert('Special date set! The countdown has been updated.');
+        }
+      });
+
+      // Play song button
+      document.getElementById('play-song').addEventListener('click', function() {
+        const song = document.getElementById('our-song');
+        if (song.paused) {
+          song.play();
+          this.textContent = 'Pause Song';
+        } else {
+          song.pause();
+          this.textContent = 'Play Our Song';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
